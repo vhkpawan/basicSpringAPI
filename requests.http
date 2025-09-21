@@ -3,3 +3,29 @@ GET http://localhost:8080
 
 ### GET request
 GET http://localhost:8080/api/members
+
+### POST request
+POST http://localhost:8080/api/members
+Content-Type: application/json
+
+{
+  "firstName": "Pawan",
+  "lastName": "Harikrishnan",
+  "role": "Admin"
+}
+
+### GET request
+GET http://localhost:8080/api/members/1
+
+### DELETE request
+DELETE http://localhost:8080/api/members/3
+
+### PATCH request
+PATCH http://localhost:8080/api/members/1
+Content-Type: application/json
+
+{
+  "firstName": "Pawan",
+  "lastName": "Harikrishnan",
+  "role": "Editor"
+}
